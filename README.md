@@ -36,3 +36,10 @@ Use the geolocation button on the homepage to see your current location.
 All images are loaded from online URLs — no local files needed.
 
 Designed to be simple, responsive, and visually clean.
+
+# Output
+
+<img width="837" height="442" alt="image" src="https://github.com/user-attachments/assets/d58b7e90-6b62-4ebe-a677-384061e371f1" />
+<img width="892" height="701" alt="image" src="https://github.com/user-attachments/assets/1c46a9e4-a76c-4934-80de-3da8c51fcc51" />
+<img width="1877" height="990" alt="image" src="https://github.com/user-attachments/assets/cf65a258-ad7f-41a4-ad39-21159293967c" />
+<img width="1848" height="978" alt="image" src="https://github.com/user-attachments/assets/77ce57dc-feed-4db2-bbb1-daf29dced873" />
