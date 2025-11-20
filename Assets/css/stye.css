@@ -7,41 +7,62 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #f9f9f9;
+  background: linear-gradient(to right, #f0f4ff, #fff0f5); /* soft gradient */
+  color: #333;
 }
 
-/* Navbar */
-.navbar-brand {
-  font-weight: bold;
-  font-size: 20px;
+/* Header / Navbar */
+header {
+  background: #fff;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px 0;
 }
 
-/*animation  */
-.fade {
-  animation: fadein 2s;
+header h1 {
+  font-size: 2rem;
+  color: #3333aa;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+/* Navigation Links */
+header nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #ff4081;
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadein 1.5s ease-in-out;
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Hero Section */
-.hero {
-  height: 65vh;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
-}
-
+/* Hero Section / Buttons */
 .btn-custom {
   border-radius: 20px;
   padding: 10px 20px;
+  background: #ff4081;
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background: #e73370;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* Gallery */
@@ -49,20 +70,34 @@ body {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 12px;
+  border: 2px solid #fff;
   cursor: pointer;
-  transition: 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .gallery-img:hover {
-  opacity: 0.8;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Headings in gallery */
+h2 {
+  color: #3333aa;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  color: #555555;
+  margin-bottom: 15px;
 }
 
 /* Footer */
 footer {
   background: #222;
   color: white;
-  padding: 12px;
   text-align: center;
+  padding: 15px;
   margin-top: 40px;
 }
