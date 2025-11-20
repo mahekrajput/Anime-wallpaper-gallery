@@ -5,64 +5,102 @@
   box-sizing: border-box;
 }
 
+/* Body */
 body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #050505, #0a0a0a);
+  color: #e0e0e0;
 }
 
-/* Navbar */
-.navbar-brand {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-/* Simple animation (W3Schools style) */
-.fade {
-  animation: fadein 2s;
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Hero Section */
-.hero {
-  height: 65vh;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Header / Navbar */
+header {
+  background: rgba(10, 10, 10, 0.95);
+  border-bottom: 1px solid cyan;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  padding: 20px 0;
   text-align: center;
-  color: white;
-  padding: 20px;
 }
 
-.btn-custom {
-  border-radius: 20px;
-  padding: 10px 20px;
+header h1 {
+  font-size: 2rem;
+  color: cyan;
+  text-shadow: 0 0 8px cyan;
+  margin-bottom: 10px;
 }
 
-/* Gallery */
-.gallery-img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-  cursor: pointer;
+header nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 12px;
   transition: 0.3s;
 }
 
+header nav a:hover {
+  color: #00ffff;
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadein 1.5s ease-in-out;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Buttons */
+.btn-custom {
+  border-radius: 12px;
+  padding: 10px 20px;
+  background: cyan;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px cyan;
+  transition: 0.2s;
+}
+
+.btn-custom:hover {
+  background: #00ffff;
+  transform: scale(1.05);
+}
+
+/* Gallery Section */
+h2 {
+  color: cyan;
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px cyan;
+}
+
+p {
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 220px; /* keeps original proper size */
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid cyan;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
 .gallery-img:hover {
-  opacity: 0.8;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px cyan;
 }
 
 /* Footer */
 footer {
-  background: #222;
-  color: white;
-  padding: 12px;
+  background: rgba(10, 10, 10, 0.95);
+  color: #666;
   text-align: center;
+  padding: 15px;
   margin-top: 40px;
+  border-top: 1px solid cyan;
 }
