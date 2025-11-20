@@ -5,11 +5,13 @@ A simple, responsive web gallery to browse high-quality anime wallpapers from Na
 
 # How It Works
 
+Dark, cool UI.
+
 Navigate between Home, Gallery, and About pages.
 
 Gallery displays wallpapers categorized by series, loaded directly from online URLs.
 
-Smooth fade-in animations enhance the visual experience.
+Simple animations enhance the visual experience.
 
 Geolocation button on the homepage shows your latitude and longitude.
 
@@ -19,13 +21,11 @@ HTML5 – Website structure
 
 CSS3 – Styling and hover effects
 
-Bootstrap 5 – Responsive layout
-
 JavaScript – Geolocation and interactive features
 
 # Usage
 
-Open index.html in a browser.
+Open index.html in a browser(preferably chrome or edge).
 
 Go to Gallery to explore wallpapers by series.
 
